@@ -1,4 +1,4 @@
-tion for a binary tree node.
+#definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):
 #         self.val = val
@@ -10,7 +10,7 @@ temp = []
 def postOrder(root):
 if(root):
 postOrder(root.left)
-                                                                                postOrder(root.right)
-                                                                                temp.append(root.val)
-                                                                                postOrder(root)
-                                                                                return temp
+postOrder(root.right)
+temp.append(root.val)
+postOrder(root)
+return temp
